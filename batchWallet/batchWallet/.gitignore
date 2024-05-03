@@ -1,12 +1,9 @@
 HELP.md
 .gradle
-generator/
 build/
-classes/
-logs/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**
-!**/src/test/**
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 ### STS ###
 .apt_generated
@@ -16,17 +13,18 @@ logs/
 .settings
 .springBeans
 .sts4-cache
-generated/
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
 out/
-.redis
-.data
-.DS_Store
-/out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
 ### NetBeans ###
 /nbproject/private/
@@ -34,7 +32,6 @@ out/
 /dist/
 /nbdist/
 /.nb-gradle/
-
 
 ### VS Code ###
 .vscode/
